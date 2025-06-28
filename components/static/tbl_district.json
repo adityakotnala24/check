@@ -1,0 +1,64 @@
+{
+  "type": "table",
+  "name": "tbl_district",
+  "database": "sarrauk_bhagirath",
+  "data": [
+    { "district_id": "1", "district_code": "45", "district_name": "Almora" },
+    {
+      "district_id": "2",
+      "district_code": "46",
+      "district_name": "Bageshwar"
+    },
+    { "district_id": "3", "district_code": "47", "district_name": "Chamoli" },
+    {
+      "district_id": "4",
+      "district_code": "48",
+      "district_name": "Champawat"
+    },
+    {
+      "district_id": "5",
+      "district_code": "49",
+      "district_name": "Dehradun"
+    },
+    {
+      "district_id": "6",
+      "district_code": "50",
+      "district_name": "Haridwar"
+    },
+    {
+      "district_id": "7",
+      "district_code": "51",
+      "district_name": "Nainital"
+    },
+    {
+      "district_id": "8",
+      "district_code": "52",
+      "district_name": "Pauri Garhwal"
+    },
+    {
+      "district_id": "9",
+      "district_code": "53",
+      "district_name": "Pithoragarh"
+    },
+    {
+      "district_id": "10",
+      "district_code": "54",
+      "district_name": "Rudra Prayag"
+    },
+    {
+      "district_id": "11",
+      "district_code": "55",
+      "district_name": "Tehri Garhwal"
+    },
+    {
+      "district_id": "12",
+      "district_code": "56",
+      "district_name": "Udam Singh Nagar"
+    },
+    {
+      "district_id": "13",
+      "district_code": "57",
+      "district_name": "Uttar Kashi"
+    }
+  ]
+}
