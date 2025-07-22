@@ -5,7 +5,7 @@ const NavigationController = () => {
     <Stack>
       <Stack.Screen
         options={{
-          headerTitle: "Bhagirath"
+          headerTitle: "Nyime Aid"
         }}
         name="index"
       />
@@ -55,7 +55,7 @@ const NavigationController = () => {
       />
       <Stack.Screen
         options={{
-          headerTitle: "Streamshed | Department",
+          headerTitle: "Register Conflict",
           headerBackVisible: true
         }}
         name="department/streamshed"

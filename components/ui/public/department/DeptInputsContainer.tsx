@@ -67,7 +67,7 @@ const DeptInputsContainer = () => {
           <ActivityIndicator />
           :
           <Button mode="contained" onPress={handleSubmit}>
-            Register / रजिस्टर करें
+            Register 
           </Button>
         }
       </View>

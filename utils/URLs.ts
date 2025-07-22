@@ -1,5 +1,5 @@
 const URLs = {
-  baseUrl: 'https://sarrauk.in/deptapi/',
+  baseUrl: 'https://triharisolutions.com/pakke/admin/hwc_api/',
 };
 
 export default URLs;

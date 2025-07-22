@@ -6,7 +6,7 @@ const ImagesContainer = () => {
   return (
     <View style={styles.imageContainer}>
       <Image style={styles.image}
-        source={require('../../../../assets/images/cm_uk.png')} />
+        source={require('../../../../assets/images/waterfall.jpg')} />
       {/* <Image style={styles.image}
         source={require('../../../../assets/images/satpal.jpeg')} /> */}
     </View>

@@ -6,11 +6,11 @@ const FormImageUploadInput = ({ formData, setFormData }: FormInputHolderProps) =
   const uploadSections = [
     {
       keyName: "sourceImage1",
-      text: "Upload first image of the activity / कार्य की पहली तस्वीर अपलोड करें"
+      text: "Upload first image / Siri hiri photo"
     },
     {
       keyName: "sourceImage2",
-      text: "Upload second image of the activity / कार्य की दूसरी तस्वीर अपलोड करें"
+      text: "Upload second image  / Dibe jisi boku"
     }
   ];
 

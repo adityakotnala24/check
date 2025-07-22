@@ -23,12 +23,7 @@ import { CustomInputField } from "../../../reportSource";
 export interface SpringWaterSourceFormType {
   district: string;
   block: string,
-  gramPanchayat: string,
-  revenueVillage: string,
   mobileNumber: string,
-  sourceName: string,
-  otherdeptName?: string;
-  activity: number;
   sourceImage1: string,
   sourceImage2: string;
 }
@@ -36,12 +31,7 @@ export interface SpringWaterSourceFormType {
 const createFormData = (mobileNumber: string): SpringWaterSourceFormType => ({
   district: '',
   block: '',
-  gramPanchayat: '',
-  revenueVillage: '',
   mobileNumber: mobileNumber,
-  sourceName: '',
-  otherdeptName: '',
-  activity: 0,
   sourceImage1: '',
   sourceImage2: ''
 });

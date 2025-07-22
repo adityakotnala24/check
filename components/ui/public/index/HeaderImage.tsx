@@ -7,7 +7,7 @@ const HeaderImage = () => {
   return (
     <View style={styles.headerImageContainer}>
       <Image style={styles.image}
-        source={require('../../../../assets/images/waterdrop.png')}
+        source={require('../../../../assets/images/pakke-tiger-reserve1.jpg')}
       />
     </View>
   );
@@ -23,10 +23,10 @@ const styles = StyleSheet.create({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: verticalScale(10)
+    marginTop: verticalScale(50)
   },
   image: {
-    width: '96%',
+    width: '100%',
     height: '100%',
     objectFit: 'contain',
     borderRadius: moderateScale(10)

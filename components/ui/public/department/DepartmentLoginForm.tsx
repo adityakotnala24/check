@@ -26,19 +26,21 @@ const DepartmentLoginForm = () => {
 
   const isValidForm = () => {
     const isFormValid = formData.mobileNumber && formData.password;
-    const isMobileNumberValid = formData.mobileNumber.length === 10;
+    // const isMobileNumberValid = formData.mobileNumber.length === 10;
 
-    return isFormValid && isMobileNumberValid;
+    return isFormValid;
   };
 
   const handleSignIn = (loginResponse: LoginResponse) => {
     const signInInfo: SignIn = {
       token: loginResponse.data?.token || "",
       userName: loginResponse.data?.user.userName || "",
-      mobileNumber: loginResponse.data?.user.mobileNumber || "",
-      department: loginResponse.data?.user.department || "",
-      departmentName: loginResponse.data?.user.departmentName || "",
-      district: loginResponse.data?.user.district || "",
+      hoff: loginResponse.data?.user.hoff || "",
+      chief: loginResponse.data?.user.chief || "",
+      conservator: loginResponse.data?.user.conservator || "",
+      dfo: loginResponse.data?.user.dfo || "",
+      rangeId: loginResponse.data?.user.rangeId || "",
+      rangeNameEng: loginResponse.data?.user.rangeNameEng || "",
     };
 
     signIn(signInInfo);
@@ -66,11 +68,10 @@ const DepartmentLoginForm = () => {
   return (
     <View style={GlobalStyle.formContainer}>
       <CustomInputField
-        isNumeric
         formData={formData}
         setFormData={setFormData}
         keyName="mobileNumber"
-        labelText="Mobile number / अपना मोबाइल नंबर लिखें "
+        labelText="Username / Kangre"
       />
 
       <CustomInputField
@@ -78,7 +79,7 @@ const DepartmentLoginForm = () => {
         formData={formData}
         setFormData={setFormData}
         keyName="password"
-        labelText="Password / अपना पासवर्ड नंबर लिखें "
+        labelText="Password / Jangbu "
       />
 
       <View>
@@ -86,16 +87,16 @@ const DepartmentLoginForm = () => {
           <ActivityIndicator />
           :
           <Button mode="contained" onPress={handleSubmit}>
-            Login / लॉगिन करें 
+            Login / Ṣêng 
           </Button>
         }
       </View>
 
-      <View>
+      {/* <View>
         <Button mode="contained" onPress={() => router.push('/department/signup')}>
           Signup / विभागीय रजिस्ट्रेशन करें
         </Button>
-      </View>
+      </View> */}
     </View>
   );
 };

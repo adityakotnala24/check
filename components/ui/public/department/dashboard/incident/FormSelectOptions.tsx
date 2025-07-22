@@ -60,28 +60,3 @@ export const BlockDropdown = (props: FormInputHolderProps) => (
     dependencyKey="district" />
 );
 
-export const GramPanchayatDropdown = (props: FormInputHolderProps) => (
-  <GenericDropdown
-    {...props}
-    keyName="gramPanchayat"
-    label="ग्राम पंचायत / Gram Panchayat"
-    endpoint={`gram_panchayat.php?block_code=${props.formData.block}`}
-    dependencyKey="block" />
-);
-
-export const RevenueVillageDropdown = (props: FormInputHolderProps) => (
-  <GenericDropdown
-    {...props}
-    keyName="revenueVillage"
-    label="राजस्व गाँव / Revenue Village"
-    endpoint={`revenueVillages.php?gram_panchayat=${props.formData.gramPanchayat}`}
-    dependencyKey="gramPanchayat" />
-);
-
-export const ActivitiesListDropdown = (props: FormInputHolderProps) => (
-  <GenericDropdown
-    {...props}
-    keyName="activity"
-    label="Activity"
-    endpoint="get-activity.php?activityType=Spring" />
-);

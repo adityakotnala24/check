@@ -8,10 +8,10 @@ const ProjectDetails = () => {
   return (
     <View style={styles.detailsContainer}>
       <ThemedText style={styles.screenLabelText} type='subtitle'>
-        - भगीरथ MNE ऐप -
+        - Nyime Aid -
       </ThemedText>
       <ThemedText style={styles.screenLabelText} type='title'>
-        धारा मेरा, नौला मेरा, गाँव मेरा, प्रयास मेरा
+      Loye pilo ikia pima
       </ThemedText>
       
     </View>

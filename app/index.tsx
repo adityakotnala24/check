@@ -16,7 +16,7 @@ const index = () => {
 
         <View>
           <ThemedText style={styles.screenLabelText} type='subtitle'>
-            स्प्रिंग एण्ड रिवर रेज्युविनेशन प्राधिकरण (SARRA)
+            PAKKE TIGER RESERVE
           </ThemedText>
           <Image style={styles.image}
             source={require('../assets/images/splash-icon.png')}

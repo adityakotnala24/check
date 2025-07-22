@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 
 import { horizontalScale, verticalScale } from '@/utils';
-import { SpringWaterSourceForm } from '@/components/ui/public/department/dashboard/springs';
+import { SpringWaterSourceForm } from '@/components/ui/public/department/dashboard/incident';
 
 const springs = () => {
   return (

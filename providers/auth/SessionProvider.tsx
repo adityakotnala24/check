@@ -5,10 +5,12 @@ import { useStorageState } from './useStorageState';
 export interface SignIn {
   token: string;
   userName: string;
-  mobileNumber: string;
-  department: string;
-  departmentName: string;
-  district: string;
+  hoff: string;
+  chief: string;
+  conservator: string;
+  dfo: string;
+  rangeId: string;
+  rangeNameEng: string;
 }
 
 const AuthContext = createContext<{
@@ -36,7 +38,7 @@ export function useSession() {
 
 export const SessionProvider = ({ children }: PropsWithChildren) => {
   const [[isLoading, session], setSession] = useStorageState('session');
-
+  
   return (
     <AuthContext.Provider
       value={{
@@ -44,10 +46,12 @@ export const SessionProvider = ({ children }: PropsWithChildren) => {
           const loginResponse = {
             token: params.token,
             userName: params.userName,
-            mobileNumber: params.mobileNumber,
-            department: params.department,
-            departmentName: params.departmentName,
-            district: params.district
+            hoff: params.hoff,
+            chief: params.chief,
+            conservator: params.conservator,
+            dfo: params.dfo,
+            rangeId: params.rangeId,
+            rangeNameEng: params.rangeNameEng
           };
 
           setSession(JSON.stringify(loginResponse));

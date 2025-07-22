@@ -47,41 +47,26 @@ export const DistrictDropdown = (props: FormInputHolderProps) => (
   <GenericDropdown
     {...props}
     keyName="district"
-    label="जिला / District"
-    endpoint="get-districts.php" />
+    label="Nature of Damage / Nika Kyo"
+    endpoint="get-incident-type.php" />
 );
 
 export const BlockDropdown = (props: FormInputHolderProps) => (
   <GenericDropdown
     {...props}
     keyName="block"
-    label="ब्लॉक / Block"
-    endpoint={`get-blocks.php?district_code=${props.formData.district}`}
-    dependencyKey="district" />
+    label="Damage Caused By / Niiw Hibi Bolo"
+    endpoint="get-incident-type.php" />
 );
 
-export const GramPanchayatDropdown = (props: FormInputHolderProps) => (
-  <GenericDropdown
-    {...props}
-    keyName="gramPanchayat"
-    label="ग्राम पंचायत / Gram Panchayat"
-    endpoint={`gram_panchayat.php?block_code=${props.formData.block}`}
-    dependencyKey="block" />
-);
+// export const BlockDropdown = (props: FormInputHolderProps) => (
+//   <GenericDropdown
+//     {...props}
+//     keyName="block"
+//     label="Damage Caused By / Niiw Hibi Bolo"
+//     endpoint="get-animal.php" />
+// );
 
-export const RevenueVillageDropdown = (props: FormInputHolderProps) => (
-  <GenericDropdown
-    {...props}
-    keyName="revenueVillage"
-    label="राजस्व गाँव / Revenue Village"
-    endpoint={`revenueVillages.php?gram_panchayat=${props.formData.gramPanchayat}`}
-    dependencyKey="gramPanchayat" />
-);
 
-export const ActivitiesListDropdown = (props: FormInputHolderProps) => (
-  <GenericDropdown
-    {...props}
-    keyName="activity"
-    label="Activity"
-    endpoint="get-activity.php?activityType=StreamShed" />
-);
+
+

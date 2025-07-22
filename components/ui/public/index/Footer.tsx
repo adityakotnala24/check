@@ -7,8 +7,7 @@ import { horizontalScale, moderateScale, verticalScale } from '@/utils';
 
 const FooterText = () => (
   <ThemedText style={styles.footerLabelText} type='defaultSemiBold'>
-    उत्तराखण्ड के जलस्रोतों को चिह्नित एवं संरक्षित करने हेतु विभागीय भागीदारी में अपना सहयोग प्रदान करें।
-    {'\n'} उत्तराखंड सरकार का भगीरथ प्रयास। .
+    Nii proekto haji hobi preyalu ji jungli talung haikatu raji. Nii haji dorong diputado wo jopon doko rekfu ijo nivang monu.
   </ThemedText>
   
 );
@@ -18,7 +17,7 @@ const FooterText = () => (
 const DepartmentButton = ({ onPress }: { onPress: () => void; }) => (
   <TouchableOpacity onPress={onPress} style={styles.footerButton}>
     <ThemedText style={styles.footerButtonText} type='defaultSemiBold'>
-      विभागीय लॉगिन करें 
+      Login
     </ThemedText>
   </TouchableOpacity>
 );

@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Bhagirath-MnE",
-    "slug": "project-bhagirath-mne",
+    "name": "Nyime Aid",
+    "slug": "nyime-aid",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -72,7 +72,7 @@
         "origin": false
       },
       "eas": {
-        "projectId": "3fa431fb-a334-4ff8-9687-8718bbe25335"
+        "projectId": "3459b7de-96fe-4657-93b5-2e99582933f1"
       }
     }
   }

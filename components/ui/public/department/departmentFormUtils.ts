@@ -56,10 +56,12 @@ export const createFormData = (): DeptSingnUpFormType => {
 
 interface LoginUserInfo {
   userName: string;
-  mobileNumber: string;
-  department: string;
-  departmentName: string;
-  district: string;
+  hoff: string;
+  chief: string;
+  conservator: string;
+  dfo: string;
+  rangeId: string;
+  rangeNameEng: string;
 }
 
 interface LoginResponseData {
